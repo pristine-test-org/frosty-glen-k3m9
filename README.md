@@ -1,21 +1,16 @@
 # Frosty Glen: Monorepo · Cloudflare
 
-> **This is a template, not a repository.** Copy it out and prepare it before an eval (steps below).
-> Nothing here is deployed.
-
 A monorepo with three apps on **Cloudflare**, with preview links **public**. Static Vite +
 TypeScript, no framework. The page reads a live list from the shared Supabase test project.
 Row in the support matrix: impeccable-reviews#302.
 
 ## Deployment links
 
-Filled in at prep time.
-
 | App | Folder | Production | Preview gate |
 |---|---|---|---|
-| _app one_ | `apps/<app>` | _not deployed_ | no |
-| _app two_ | `apps/<app>` | _not deployed_ | no |
-| _app three_ | `apps/<app>` | _not deployed_ | no |
+| Aster | `apps/aster-q2w` | https://frosty-glen-k3m9-aster-q2w.pages.dev | no |
+| Gorse | `apps/gorse-h7k` | https://frosty-glen-k3m9-gorse-h7k.pages.dev | no |
+| Nettle | `apps/nettle-z4p` | https://frosty-glen-k3m9-nettle-z4p.pages.dev | no |
 
 ## Names
 
