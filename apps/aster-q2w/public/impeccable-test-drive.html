@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster · Test drive</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      .mark { font-weight: 700; color: #2f7d4f; }
+      main { max-width: 44rem; margin: 0 auto; padding: 2rem 0; }
+      h1 {
+        margin: 0 1rem 1rem;
+        font-size: clamp(2rem, 6vw, 3rem);
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #2f7d4f, #e11d8f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .lede { margin: 0 1rem 1rem; line-height: 1.5; }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+      .edge { margin: 0; padding: 0; line-height: 1.5; }
+      /* Intentional, for Impeccable's test drive: low-contrast text (#c8c8c8 on #fafaf7). */
+      .faint { margin: 1rem; color: #c8c8c8; }
+      .bar {
+        margin: 1rem; height: 0.6rem; width: 30%; background: #2f7d4f; border-radius: 0.3rem;
+        /* Intentional, for Impeccable's test drive: transition on a layout property. */
+        transition: width 0.3s;
+      }
+      .bar:hover { width: 90%; }
+      .actions { margin: 1rem; display: flex; gap: 1rem; }
+      .actions a { color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .tiny { font-size: 10px; }
+      /* Intentional, for Impeccable's test drive: a colour that is not in the app's palette. */
+      .note { margin: 1rem; padding: 0.5rem 0.75rem; background: #ffe0f0; border-radius: 0.4rem; }
+    </style>
+  </head>
+  <body>
+    <header><span class="mark">Aster</span></header>
+    <main>
+      <h1>Test drive</h1>
+      <p class="lede">A short page added only to show a review of Aster.</p>
+      <p class="edge">This paragraph sits flush against both sides of the viewport on purpose, so the review can notice body text with no breathing room.</p>
+      <p class="faint">A quiet aside in a very light grey, easy to miss against the page.</p>
+      <div class="bar" aria-hidden="true"></div>
+      <p class="note">Nothing here is real: it only shows Aster being reviewed.</p>
+      <div class="actions">
+        <a class="tiny" href="/">Back to Aster</a>
+      </div>
+    </main>
+    <footer>Aster · a test site for Impeccable reviews</footer>
+  </body>
+</html>
